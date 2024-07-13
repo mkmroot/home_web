@@ -29,3 +29,18 @@ body {
     color: #00f;
     font-size: 18px;
 }
+
+
+table{
+    margin-left: 16px;  
+}
+
+td{
+    padding: 10px;
+    margin: 20px;  
+}
+
+audio{
+
+}
+
