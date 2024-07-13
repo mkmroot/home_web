@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    margin: 20px;
+    text-align: left;
+}
+
+#searchInput {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border: 3px solid #ccc;
+    border-radius: 30px;
+}
+
+.content-container {
+    margin: 20px;
+}
+
+.content-item {
+    margin: 10px 0;
+}
+
+.content-item a {
+    text-decoration: none;
+    color: #00f;
+    font-size: 18px;
+}
