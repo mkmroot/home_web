@@ -18,29 +18,39 @@ body {
 
 .content-container {
     margin: 20px;
+    border: 1px solid rgb(55, 55, 56)
+   
+    
 }
 
 .content-item {
-    margin: 10px 0;
+    margin: 20px;
+    padding: 5px;
+    width: 40%;
+    background-color: rgb(201, 219, 245);
+    border: 1px solid rgb(55, 55, 56);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-content: center;
 }
+.content-item:hover {
+    transform: scale(1.005);
 
+}
 .content-item a {
     text-decoration: none;
     color: #00f;
     font-size: 18px;
 }
 
-
-table{
-    margin-left: 16px;  
+@media (max-width: 600px) {
+    .content-item {
+        width: 90%;
+    }
 }
 
-td{
-    padding: 10px;
-    margin: 20px;  
-}
 
 audio{
-
+   margin-left: 20px; 
 }
 
