@@ -1,0 +1,39 @@
+<html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchable Content</title>
+    <link rel="stylesheet" href="node.css">
+</head>
+    <body>
+        <h1>Home web 🏡️</h1>
+        <p>Automation</p>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+        
+        <div class="content-container" id="contentContainer">
+            <div class="content-item" data-keywords="python-basics-sample basic note chapters devops git chef docker">
+                <a onclick="sendIR('1')">Power</a>
+            </div>
+            <div class="content-item" data-keywords="songs music gana bollywood">
+                <a onclick="sendIR('2')">Boost/<a>
+            </div>
+            <div class="content-item" data-keywords="carrot vegetable orange">
+                <a onclick="sendIR('3')">Speed-1 📰️ </a>
+            </div>
+            <div class="content-item" data-keywords="carrot vegetable orange">
+                <a onclick="sendIR('1')">Speed-2 🗒️ </a>
+            </div>
+            <div class="content-item" data-keywords="date fruit sweet">
+                <a onclick="sendIR('2')">Speed-3</a>
+            </div>
+        </div>
+        <br>
+        <a href="index.html"> 🏠️ </a>
+        <script>function sendIR(code) { fetch('http://mynodemcu.local/sendIR?code=' + code, { mode: 'no-cors' }); }</script>
+
+</body>
+</html>

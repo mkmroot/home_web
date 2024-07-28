@@ -1,0 +1,30 @@
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body>
+    <h1>Control IR LED &amp; Wi-Fi Setup</h1>
+    <form action="/connect" method="POST">SSID: 
+        <select name="ssid">
+        <option value="Jena_Act">Jena_Act</option>
+        <option value="Galaxy F54 5G 4C90">Galaxy F54 5G 4C90</option>
+        <option value="SHINIK">SHINIK</option>
+        <option value="SSID2">SSID2</option>
+        <option value="Headshot_Blr">Headshot_Blr</option>
+        <option value="ZTE_2.4G_79wKDR">ZTE_2.4G_79wKDR</option>
+        <option value="chethan">chethan</option>
+        <option value="D-Link_DIR-615">D-Link_DIR-615</option>
+        <option value="RSHome">RSHome</option><option value="Alone Boy ">Alone Boy </option>
+        <option value="Redmi Note 12">Redmi Note 12</option>
+        <option value="TP-Link_7E39">TP-Link_7E39</option>
+        <option value="ACT103456798560">ACT103456798560</option>
+        </select>
+        <br>
+        Password: <input type="password" name="password">
+        <br>
+        <input type="submit" value="Connect to Wi-Fi"></form>
+        <br>
+        <button onclick="sendIR('1')">Send IR Signal 1</button><br>
+        <button onclick="sendIR('2')">Send IR Signal 2</button><br>
+        <button onclick="sendIR('3')">Send IR Signal 3</button><br>
+        <script>function sendIR(code) { fetch('/sendIR?code=' + code); }</script>
+    </body>
+    </html>
